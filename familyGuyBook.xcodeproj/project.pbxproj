@@ -13,6 +13,7 @@
 		42EBFB812B3F695A000F18E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EBFB7F2B3F695A000F18E1 /* Main.storyboard */; };
 		42EBFB832B3F695B000F18E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EBFB822B3F695B000F18E1 /* Assets.xcassets */; };
 		42EBFB862B3F695B000F18E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EBFB842B3F695B000F18E1 /* LaunchScreen.storyboard */; };
+		42EBFB942B3F6E7C000F18E1 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EBFB932B3F6E7C000F18E1 /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		42EBFB822B3F695B000F18E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42EBFB852B3F695B000F18E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42EBFB872B3F695B000F18E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EBFB932B3F6E7C000F18E1 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				42EBFB822B3F695B000F18E1 /* Assets.xcassets */,
 				42EBFB842B3F695B000F18E1 /* LaunchScreen.storyboard */,
 				42EBFB872B3F695B000F18E1 /* Info.plist */,
+				42EBFB932B3F6E7C000F18E1 /* DetailsVC.swift */,
 			);
 			path = familyGuyBook;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42EBFB7E2B3F695A000F18E1 /* ViewController.swift in Sources */,
+				42EBFB942B3F6E7C000F18E1 /* DetailsVC.swift in Sources */,
 				42EBFB7A2B3F695A000F18E1 /* AppDelegate.swift in Sources */,
 				42EBFB7C2B3F695A000F18E1 /* SceneDelegate.swift in Sources */,
 			);
