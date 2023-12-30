@@ -16,9 +16,14 @@ class DetailsVC: UIViewController {
     
     @IBOutlet weak var myJobLabel: UILabel!
     
+    var selected : Family?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        myImageView.image = selected?.image
+        myNameLabel.text = selected?.name
+        myJobLabel.text = selected?.job
     }
     
 

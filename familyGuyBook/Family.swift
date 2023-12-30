@@ -14,9 +14,9 @@ class Family {
     var job : String
     var image : UIImage
     
-    init(name: String, job: String, image: UIImage) {
-        self.name = name
-        self.job = job
-        self.image = image
+    init(familyGuyName: String, familyGuyJob: String, familyGuyImage: UIImage) {
+        self.name = familyGuyName
+        self.job = familyGuyJob
+        self.image = familyGuyImage
     }
 }

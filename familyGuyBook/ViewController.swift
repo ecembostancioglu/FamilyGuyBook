@@ -15,41 +15,44 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var familyList = [Family]()
     
+    var chosen : Family?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         myTableView.dataSource = self
         myTableView.delegate = self
         
+
         let peter = Family(
-            name: "Peter",
-            job: "Brewery shipping clerk",
-            image: UIImage(named: "peter")!)
+            familyGuyName: "Peter",
+            familyGuyJob: "Brewery shipping clerk",
+            familyGuyImage: UIImage(named: "peter")!)
         
         let lois = Family(
-            name: "Lois",
-            job: "Housewife",
-            image: UIImage(named: "lois")!)
+            familyGuyName: "Lois",
+            familyGuyJob: "Housewife",
+            familyGuyImage: UIImage(named: "lois")!)
         
         let meg = Family(
-            name: "Meg",
-            job: "Student",
-            image: UIImage(named: "meg")!)
+            familyGuyName: "Meg",
+            familyGuyJob: "Student",
+            familyGuyImage: UIImage(named: "meg")!)
         
         let chris = Family(
-            name: "Chris",
-            job: "Student",
-            image: UIImage(named: "chris")!)
+            familyGuyName: "Chris",
+            familyGuyJob: "Student",
+            familyGuyImage: UIImage(named: "chris")!)
         
         let stewie = Family(
-            name: "Stewie",
-            job: "Inventor",
-            image: UIImage(named: "stewie")!)
+            familyGuyName: "Stewie",
+            familyGuyJob: "Inventor",
+            familyGuyImage: UIImage(named: "stewie")!)
         
         let brian = Family(
-            name: "Brian",
-            job: "Writer",
-            image: UIImage(named: "brian")!)
+            familyGuyName: "Brian",
+            familyGuyJob: "Writer",
+            familyGuyImage: UIImage(named: "brian")!)
         
         familyList.append(peter)
         familyList.append(lois)
@@ -69,6 +72,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        chosen = familyList[indexPath.row]
+        self.performSegue(withIdentifier: "toDetailsVC", sender: nil)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsVC" {
+            let destinationVC = segue.destination as! DetailsVC
+            destinationVC.selected = chosen
+        }
+    }
 
 }
 
